@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Car Information Form</title>
+    <style>
+      body {
+        background-color: #343a40;
+        color: #ffffff;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        margin-top: 50px;
+        border: 1px solid #ffffff; /* Border color for the form */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px;
+      }
+
+      .form-label {
+        font-weight: bold;
+      }
+
+      .btn-search {
+        background-color: #28a745;
+        color: #ffffff;
+      }
+
+      .btn-cancel {
+        background-color: #dc3545;
+        color: #ffffff;
+      }
+
+      .form-control,
+      .form-select {
+        background-color: #495057;
+        color: #ffffff;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="mb-4">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-car"></i> Car Information</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h2 class="mb-4 bg-dark text-white p-2 text-center">
+        กรุณากรอกข้อมูลรถยนต์
+      </h2>
+      <form>
+        <div class="mb-3">
+          <label for="licensePlate" class="form-label">ค้นหาป้ายทะเบียน</label>
+          <input
+            type="text"
+            class="form-control border rounded-3"
+            id="licensePlate"
+            placeholder="กรอกป้ายทะเบียน"
+            
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="carColor" class="form-label">สีรถ</label>
+          <select class="form-select" id="carColor" >
+            <option value="" disabled selected>เลือกสีรถ</option>
+            <option value="white">White</option>
+            <option value="blue/dark blue">Blue/Dark Blue</option>
+            <option value="black/gray">Black/Gray</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="carBrand" class="form-label">ยี่ห้อรถ</label>
+          <select class="form-select" id="carBrand">
+            <option value="" disabled selected>เลือกยี่ห้อรถ</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="mazda">Mazda</option>
+            <option value="suzuki">Suzuki</option>
+            <option value="ford">Ford</option>
+            <option value="nissan/mitsubishi">Nissan/Mitsubishi</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="carType" class="form-label">ประเภทรถ</label>
+          <select class="form-select" id="carType" >
+            <option value="" disabled selected>เลือกประเภทรถ</option>
+            <option value="saloon">Saloon</option>
+            <option value="suv/mpv">SUV/MPV</option>
+            <option value="truck">Truck</option>
+          </select>
+        </div>
+            <div class="d-flex justify-content-end mt-3">
+              <button type="button" class="btn btn-success me-2">
+                <i class="fas fa-search"></i> ค้นหา
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="fas fa-times"></i> ยกเลิก
+              </button>
+            </div>
+      </form>
+    </div>
+    <footer class="mt-4">
+      <div class="text-center text-muted">
+        <p>&copy; 2023 Car Information Form</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
